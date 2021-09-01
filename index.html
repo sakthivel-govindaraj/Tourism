@@ -1,0 +1,1815 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Landing Page</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/6f34f904f9.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+	<style>
+		body{
+			font-family: 'Nunito', sans-serif;
+			margin:0;
+		}
+		.bg-img{
+			background-image: url(https://livedemo00.template-help.com/wt_prod-28076_tf/video/video.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			height:500px;
+		}
+		.header{
+			width:90%;
+			margin:auto;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			font-size: 18px;
+			cursor: pointer;
+			padding-top: 42px;
+		}
+		.sp-around{
+			display: flex;
+			justify-content: space-around;
+			width: 77%;
+			color: #4C4A5A;
+			font-weight: 600;
+		}
+		.dropdown{
+			color:#43B9A4;
+			position: relative;
+			display: inline-block;
+		}
+		.dropdown-content{
+			position: absolute;
+			display: none;
+			z-index: 1;
+			color:#43B9A4;
+			min-width: 160px;
+			box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			padding: 12px 16px;
+			background-color:#F7F7F7;
+			border-radius:5px;
+		}
+		.dropdown:hover .dropdown-content{
+			display: block;	
+		}
+		.description{
+			display: flex;
+			width:90%;
+			margin: auto;
+
+		}
+		.header-description{
+			width:90%;
+		}
+		.h1-align{
+			color:#FFFFFF;
+			font-size:64px;
+			width:832px;
+			margin-top: 70px;
+			line-height: 70px; 
+		}
+		.button{
+			display: flex;
+			justify-content: space-between;
+			padding-top: 13px;
+			flex-wrap: wrap;
+		}
+		.button1{
+			height:56px;
+			width:32%;
+			border-radius:5px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			background-color: #FFFFFF;
+			color:#72727D;
+			padding: 10px;
+			font-size: 18px;
+
+		}
+		.button2{
+			height:56px;
+			width:24%;
+			border-radius:5px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: #0AB193;
+			color:#FFFFFF;
+			font-size: 18px;
+			cursor: pointer;
+		}
+		.button2:hover{
+			background-color: #ffffff;
+			color:#0AB193;
+		}
+		.icons{
+			width:10%;
+			display: flex;
+			flex-direction: column;
+			justify-content:center;
+			align-items: center;
+		}
+		.icon-align{
+			height:50px;
+			width:50px;
+			border-radius:29px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color:#ffffff;
+			border: 2px solid #E5D9D7;
+			cursor: pointer;
+			margin-bottom: 10px;
+		}
+		.icon-align1{
+			height:50px;
+			width:50px;
+			border-radius:29px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color:#ffffff;
+			border: 2px solid #E5D9D7;
+			cursor: pointer;
+			margin-bottom:10px;
+		}
+		.icon-align2{
+			height:50px;
+			width:50px;
+			border-radius:29px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color:#ffffff;
+			border: 2px solid #E5D9D7;
+			cursor: pointer;
+			margin-bottom: 10px;
+		}
+		.icon-align:hover{
+			background-color: #4064AC;
+		}
+		.icon-align1:hover{
+			background-color: #0077B5;
+		}
+		.icon-align2:hover{
+			background-color: #52A8E5;
+		}
+		.h2-align{
+			font-size: 48px;
+			text-align: center;
+			padding-top: 30px;
+			font-weight: bold;
+		}
+		.sellers-info{
+			width:90%;
+			margin: auto;
+			display: flex;
+			justify-content: space-between;
+			padding-top: 28px;
+		}
+
+		.package{
+			width:370px;
+			height:400px;
+		}
+		.days{
+			display: flex;
+			justify-content: space-between;
+			font-size:18px;
+			padding-top: 12px;
+		}
+		.days-color{
+			color:#AA8D90;
+		}
+		.no-color{
+			color:#0AB193;
+		}
+		.h4-align{
+			font-size: 24px;
+			margin-top: 8px;
+			color:#29293A;;
+			cursor: pointer;
+
+		}
+		.h4-align:hover{
+			color:#AA8D90;
+		}
+		.border-align{
+			height:100px;
+			display: flex;
+			justify-content: center;
+			margin-top: 42px;
+		}
+		.border{
+			height:60px;
+			width:212px;
+			border-radius:5px;
+			color:#FFFFFF;
+			background-color: #0AB193;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 18px;
+			cursor: pointer;
+		}
+		.border:hover{
+			background-color:#5e5e63
+		}
+		.bg-color{
+			background-color: #F7F7F7;
+			margin-top: 68px;
+		}
+		.add-info{
+			height:100%;
+			width:90%;
+			margin: auto;
+			display: flex;
+			justify-content: space-between;
+		}
+		.h3-align{
+			font-size: 28px;
+			color:#29293A;
+		}
+		.value-info{
+			font-size:18px;
+			color:#999F84;
+			line-height: 27px;
+			margin-top: 30px;
+
+		}
+		.values{
+			width:300px;
+		}
+		.Destinations{
+			width:300px;
+		}
+		.partners{
+			width:300px;
+		}
+		.Destinations span{
+			color:#898992;
+			font-size: 18px;
+		}
+		.border1{
+			height:52px;
+			width:177px;
+			border-radius: 5px;
+			background-color: #0AB193;
+			color:#ffffff;
+			display: flex;
+			justify-content:center;
+			align-items: center;
+			cursor: pointer;
+		}
+		.border1:hover{
+			background-color: #5e5e63;
+		}
+
+		.border2{
+			height:120px;
+			width:135px;
+			border-radius: 4px;
+			background-color: #ffffff;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			margin-bottom: 16px;
+		}
+		.partners-align{
+			margin-top: 28px;
+		}
+		.border1-align{
+			margin-top:24px;
+		}
+		.advantages{
+			height:200px;
+			margin-top: 64px;
+
+		}
+		.advantages span{
+			display: flex;
+			font-size:18px;
+			text-align: center;
+			max-width: 500px;
+			margin: auto;
+		}
+		.advantages-info{
+			width:90%;
+			margin: auto;
+			display: flex;
+			justify-content: space-between;
+			height:100%;
+			padding-top: 30px;
+		}
+		.advantages-info1{
+			width:85%;
+			margin: auto;
+			display: flex;
+			justify-content: space-between;
+			height:100%;
+		}
+		.prices{
+			width:270px;
+			position: relative;
+			margin-bottom: 74px;
+		}
+		.border3{
+			height:226px;
+			width:270px;
+			border:1px solid #EFF2F4;
+			border-radius: 4px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size:24px;
+
+		}
+		.border4{
+			height:109px;
+			width:109px;
+			border:3px solid #EFF2F4;
+			border-radius:55px;
+			color:#89B193;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			position: absolute;
+			top: -57px;
+			left: 67px;
+
+		}
+		.bg-img1{
+			height:	250px;
+			background-image: url(https://livedemo00.template-help.com/wt_prod-28076_tf/images/bg-image-2.jpg);
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+		}
+		.img1-info{
+			width:90%;
+			margin:auto;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+		.Destinations-align{
+			margin-top:11px;
+		}
+		.info-align{
+			color:#ffffff;
+			font-size: 48px;
+		}
+		.border5{
+			height:54px;
+			width:240px;
+			color:#FFFFFF;
+			background-color:#0AB193;
+			border-radius:4px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 16px
+		}
+		.align{
+			padding-top: 102px;
+		}
+		.Testimonials{
+			height:150px;
+			margin-top: 70px;
+		}
+		.img1{
+			width:318px;
+			background-image: url(https://livedemo00.template-help.com/wt_prod-28076_tf/images/quote-classic-bg-330x407.jpg);
+			background-repeat: no-repeat;
+			position: relative;
+			margin-bottom: 25px;
+		}
+		.border6{
+			height:77px;
+			width:77px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			border-radius:39px;
+			border:5px solid #FFFFFF;
+			overflow: hidden;
+			position: absolute;
+			top: 17px;
+			left: -35px;
+		}
+		.p-align{
+			font-size: 22px;
+			color:#0ab193;
+			padding-top: 39px;
+			padding-left: 72px;
+		}
+		.p-align1{
+			font-size: 18px;
+			color:#A4A7AA;
+			padding-left: 72px;
+			margin-top: -8px;
+		}
+		.content-align{
+			color:#FFFFFF;
+			font-size:18px;
+			padding-left: 72px;
+			padding-top: 26px;
+			display: flex;
+			max-width: 278px;
+		}
+		.border7{
+			height:60px;
+			width:348px;
+			border-radius:5px;
+			background-color: #0AB193;
+			color:#FFFFFF;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 18px;
+		}
+		.border7-align{
+			display: flex;
+			justify-content: center;
+		}
+		.bg-img2{
+			height:400px;
+			background-image: url(https://livedemo00.template-help.com/wt_prod-28076_tf/images/bg-image-7.jpg);
+			background-repeat: no-repeat;
+			background-position: center;
+			margin-top: 91px;
+
+		}
+		.clients{
+			width: 960px;
+			margin: auto;
+			display: flex;
+			justify-content: space-between;
+			align-items: flex-start;
+		}
+		.icon-color{
+			color:#0AB193;
+		}
+		.clients-align{
+			margin-top: 125px;
+			width: 239px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+		.no-align{
+			display: flex;
+			flex-direction: column;
+		}
+		.no-font{
+			font-size: 54px;
+			color:#FFFFFF;
+			font-weight: bold;
+		}
+		.color{
+			color:#FFFFFF;
+			font-size: 24px;
+		}
+		.places{
+			width:1200px;
+			margin: auto;
+			display: flex;
+			justify-content: space-around;
+			height:100%;
+		}
+		.bg-img3{
+			width:565px;
+			background-image: url(https://livedemo00.template-help.com/wt_prod-28076_tf/images/grid-blog-1-570x350.jpg);
+			background-repeat: no-repeat;
+			margin-bottom:25px;
+			background-size: cover;
+		}
+		.bg-img4{
+			width:565px;
+			background-image: url(https://livedemo00.template-help.com/wt_prod-28076_tf/images/grid-blog-2-570x350.jpg);
+			background-repeat: no-repeat;
+			margin-bottom:25px;
+			background-size: cover;
+		}
+		.bg-img5{
+			width:565px;
+			background-image: url(https://livedemo00.template-help.com/wt_prod-28076_tf/images/grid-blog-3-570x350.jpg);
+			background-repeat: no-repeat;
+			margin-bottom:25px;
+			background-size: cover;
+		}
+		.border8{
+			height:28px;
+			width:13%;
+			border-radius:4px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			background-color: #0AB193;
+			color:#FFFFFF;
+		}
+		.border8-align{
+			padding-top: 26px;
+			padding-left: 26px;
+		}
+		.h4-align1{
+			color:#FFFFFF;
+			font-size: 24px;
+		}
+		.date-color{
+			color:#FFFFFF;
+		}
+		.date-align{
+			padding-left:26px;
+			padding-top: 197px;
+		}
+		.parallax{
+			margin-top: 70px;
+			height:500px;
+			background-image: url(https://livedemo00.template-help.com/wt_prod-28076_tf/images/bg-image-4.jpg);
+			background-attachment: fixed;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			position: relative;
+		}
+		.gallery-color{
+			color:#FFFFFF;
+			font-size: 18px;
+			position: absolute;
+			top: 77px;
+			left: 58px;
+		}
+		.h2-align1{
+			color:#FFFFFF;
+			position: absolute;
+			font-size: 48px;
+			top: 116px;
+			left: 52px;
+			width: 628px;
+		}
+		.gallery-info{
+			position: absolute;
+			font-size: 22px;
+			color:#F3F3F9;
+			top: 311px;
+			left: 55px;
+			width: 534px;
+		}
+		.border-1{
+			height:60px;
+			width:240px;
+			border-radius:5px;
+			color:#FFFFFF;
+			background-color: #0AB193;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-size: 18px;
+			cursor: pointer;
+			position: absolute;
+			left: 55px;
+			top: 398px;
+		}
+		.brand{
+			width:1200px;
+			margin: auto;
+			display: flex;
+			justify-content: space-between;
+			height: 100%;
+			margin-top: 86px;
+		}
+		.brand-img{
+			width:168px;
+			margin-bottom: 15px;
+			display: flex;
+			justify-content: center;
+			align-items: center
+		}
+		.bg-color1{
+			background-color: #F7F7F7;
+			height:100%;
+
+		}
+		.contacts{
+			width:90%;
+			margin: auto;
+			display: flex;
+			justify-content: space-between;
+
+		}
+		.contacts-info{
+			width:540px;
+			padding-top: 56px;
+		}
+		.inputfield{
+			height:50px;
+			width:70%;
+		}
+		.no-align1{
+			font-size:48px;
+		}
+		.contacts-align{
+			padding-top: 32px;
+		}
+		.fb-button{
+			height:50px;
+			width:50px;
+			border-radius:25px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color:#828590;
+			background-color: #E9E9E9;
+			cursor: pointer;
+
+		}
+		.linkedin-button{
+			height:50px;
+			width:50px;
+			border-radius:25px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color:#828590;
+			background-color: #E9E9E9;
+			cursor: pointer;
+			margin-left: 14px;
+
+		}
+		.twitter-button{
+			height:50px;
+			width:50px;
+			border-radius:25px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			color:#828590;
+			background-color: #E9E9E9;
+			cursor: pointer;
+			margin-left: 14px;
+
+		}
+		.fb-button:hover{
+			color:#FFFFFF;
+			background-color: #4064AC;
+		}
+		.linkedin-button:hover{
+			color:#FFFFFF;
+			background-color: #0077B5;
+
+		}
+		.twitter-button:hover{
+			color:#FFFFFF;
+			background-color: #52A8E5;
+		}
+		.media{
+			display: flex;
+			padding-top:32px;
+		}
+		.flex{
+			display: flex;
+		}
+		.flex1{
+			display: flex;
+			padding-top: 29px;
+			color:#728889;
+		}
+		.images{
+			height:224px;
+			width:221px;
+			position: relative;
+		}
+		.images-info{
+			width:1326px;
+		}
+		.footer-bg{
+			background-color: #1f1f21;
+		}
+		.footer{
+			height:100%;
+			width:90%;
+			margin:auto;
+			display: flex;
+			justify-content: space-between;
+		}
+		.footer-description{
+			width:288px;
+			padding-top: 60px;
+		}
+		.description-info{
+			width:200px;
+		}
+		.no-align2{
+			color:#FFFFFF;
+			font-size: 36px;
+		}
+		.tour-color{
+			font-size: 18px;
+			color:#728889;
+		}
+		
+		.twitter-feed{
+			width:369px;
+			padding-top: 60px;
+		}
+		.h3-align1{
+			font-size: 28px;
+			color:#F3F3F9;
+		}
+		.p-color{
+			font-size: 18px;
+		}
+		.pd-lt{
+			padding-left:12px;
+		}
+		.about{
+			padding-top:29px;
+		}
+		.copy{
+			color:#728889;
+			padding-left:64px;
+		}
+		.border-heart{
+			height:200px;
+			width:89%;
+			background-color:#0AB193;
+			color:#FFFFFF;
+			justify-content: center;
+			align-items: center;
+			position: absolute;
+			top: 10px;
+			left: 10px;
+			opacity: 0.6;
+			font-size: 18px;
+			display: none;
+			cursor: pointer;
+		}
+		.images:hover > .border-heart{
+			display: flex;
+		}
+
+		.wrap{ 
+			-webkit-flex-wrap: wrap;
+			flex-wrap: wrap;
+		} 
+		.fa-color{
+			color: #E8E8E8;
+		}
+		@media only screen and (max-width: 1260px){
+			.package{
+				width:300px;
+			}
+			.package img{
+				width:100%;
+			}
+		} 
+		@media only screen and (max-width: 1030px){
+			.sellers-info {
+				width:75%;
+			}
+		} 
+		@media only screen and (max-width: 820px){
+			.sellers-info {
+				width:84%;
+			}
+		} 
+		@media only screen and (max-width: 730px){
+			.sellers-info {
+				width:90%;
+			}
+		} 
+		@media only screen and (max-width: 670px){
+			.package{
+				width:370px;
+				margin: auto;
+			}
+		} 
+
+		@media only screen and (max-width: 999px){
+			.values{
+				width:400px;
+			}
+			.Destinations{
+				width:400px;
+			}
+			.partners{
+				width:850px;
+			}
+		}
+		@media only screen and (max-width: 888px){
+			.values{
+				width:350px;
+			}
+			.Destinations {
+				width: 350px;
+			}
+		}
+		@media only screen and (max-width: 777px){
+			.values{
+				width:300px;
+			}
+			.Destinations {
+				width: 300px;
+			}
+
+		}
+		@media only screen and (max-width: 665px){
+			.values{
+				width:250px;
+			}
+			.Destinations {
+				width: 250px;
+			}
+
+		}
+
+		@media only screen and (max-width: 555px){
+			.values{
+				width:400px;
+			}
+			.Destinations {
+				width: 400px;
+			}
+
+		}
+		@media only screen and (max-width: 500px){
+			.h2-align {
+				font-size: 30px;
+			}
+			.advantages span{
+				font-size: 16px;
+				max-width:90%;
+
+			}
+		}
+		@media only screen and (max-width: 910px){
+			.advantages-info {
+				width: 75%;
+			}
+
+		}
+		@media only screen and (max-width: 723px){
+			.advantages-info {
+				width: 79%;
+			}
+
+		}
+		@media only screen and (max-width: 690px){
+			.advantages-info {
+				width: 83%;
+			}
+
+		}
+
+		@media only screen and (max-width: 656px){
+			.advantages-info {
+				width: 89%;
+			}
+
+		}
+		@media only screen and (max-width: 606px){
+			.advantages-info {
+				width: 92%;
+			}
+
+		}
+
+		@media only screen and (max-width: 592px){
+			.prices {
+				margin: auto;
+				margin-bottom: 74px;
+			}
+		}
+		@media only screen and (max-width: 1094px){
+			.img1-info {
+				display: flex;
+				flex-direction: column;
+			}
+		}
+		@media only screen and (max-width: 818px){
+			.bg-img1 {
+				height:300px;
+			}
+			.info-align{
+				font-size: 40px;
+			}
+		}
+		@media only screen and (max-width: 680px){
+			.info-align{
+				font-size: 30px;
+			}
+		}
+		@media only screen and (max-width: 1000px){
+			.color{
+				font-size: 20px;
+			}
+			.no-font{
+				font-size: 40px;
+			}
+			.clients{
+				width: 600px;
+			}
+			.clients-align{
+				width:60px;
+			}
+
+		}
+		
+		@media only screen and (max-width: 700px){
+			.clients{
+				width:450px;
+			}
+			.clients-align{
+				width:200px;
+			}
+			.bg-img2{
+				height:100%;
+				background-size: cover;
+			}
+		}
+
+		@media only screen and (max-width: 500px){
+			.clients{
+				width:310px;
+			}
+
+			.clients-align{
+				width:150px;
+			}
+			.color {
+				width:85px;
+			}
+		}
+		@media only screen and (max-width: 1200px){
+			.places{
+				width:900px;	
+			}
+			.bg-img3,.bg-img4,.bg-img5{
+				width:425px;
+			}
+
+		}
+		
+		@media only screen and (max-width: 925px){
+			.places{
+				width:750px;	
+			}
+			.bg-img3,.bg-img4,.bg-img5{
+				width: 350px;
+			}
+
+		}
+		@media only screen and (max-width: 780px){
+			.places{
+				width:650px;	
+			}
+			.bg-img3,.bg-img4,.bg-img5{
+				width: 300px;
+			}
+
+		}
+		@media only screen and (max-width: 690px){
+			.places{
+				width:90%;	
+			}
+			.bg-img3,.bg-img4,.bg-img5{
+				width: 100%;
+			}
+
+		}
+		@media only screen and (max-width: 680px){
+			.h2-align1 {
+				font-size: 28px;
+				text-align: center;
+				width:71%;
+				left:11%;
+			}
+			.gallery-info {
+				text-align: center;
+				font-size: 18px;
+				width: 67%;
+				left:11%;
+
+			}
+			.gallery-color {
+				left:33%;
+			}
+
+			.border-1 {
+				left:32%;
+				height:40px;
+				width:150px;
+				font-size: 13px;
+				top:425px;
+			}
+		}
+		@media only screen and (max-width: 1200px){
+			.brand{
+				width:900px;
+			}
+		}
+		@media only screen and (max-width: 900px){
+			.brand{
+				width:600px;
+			}
+		}
+		@media only screen and (max-width: 600px){
+			.brand{
+				width:400px;
+			}
+		}
+		@media only screen and (max-width: 400px){
+			.brand{
+				width:168px;
+			}
+		}
+		@media only screen and (max-width: 1140px){
+			.footer{
+				width:93%;
+			}
+		}
+		@media only screen and (max-width: 1103px){
+			.footer-description {
+				width:100%;
+				display: flex;
+				justify-content: space-between;
+				flex-wrap: wrap;
+			}
+			
+			.twitter-feed {
+				width:45%;
+			}
+		}
+		@media only screen and (max-width: 860px){
+			.footer-description {
+				width:65%;
+				margin:auto;
+			}
+			.twitter-feed {
+				width:45%;
+			}
+		}
+		@media only screen and (max-width: 660px){
+			.footer-description {
+				width:75%;
+				margin:auto;
+			}
+			.twitter-feed {
+				width:75%;
+				margin: auto;
+			}
+		}
+		@media only screen and (max-width: 574px){
+			.footer-description {
+				width:85%;
+				margin:auto;
+			}
+			.twitter-feed {
+				width:85%;
+				margin: auto;
+			}
+		}
+		@media only screen and (max-width: 507px){
+			.footer-description {
+				width:94%;
+				margin:auto;
+			}
+			.twitter-feed {
+				width:94%;
+				margin: auto;
+			}
+		}
+
+		@media only screen and (max-width: 1326px){
+			.images-info{
+				width:1200px;
+				display: flex;
+				justify-content: space-between;
+				margin: auto;
+			}
+			.images{
+				margin-bottom: 15px;
+			}
+		}
+		@media only screen and (max-width: 1240px){
+			.images-info{
+				width:800px;
+			}
+		}
+		@media only screen and (max-width: 900px){
+			.images-info{
+				width:730px;
+			}
+		}
+		@media only screen and (max-width: 800px){
+			.images-info{
+				width:500px;
+			}
+		}
+		@media only screen and (max-width: 550px){
+			.images-info{
+				width:224px;
+			}
+		}
+		@media only screen and (max-width: 1200px){
+			.no-align1{
+				font-size: 30px;
+			}
+			.contacts-info{
+				width:500px;
+			}
+			
+		}
+		@media only screen and (max-width: 1110px){
+			.contacts{
+				width:85%;
+			}
+			.contacts-info{
+				width:450px;
+			}
+		}
+		@media only screen and (max-width: 1057px){
+			.contacts{
+				width:75%;
+			}
+			.contacts-info{
+				width:350px;
+			}
+		}
+
+		@media only screen and (max-width: 935px){
+			.contacts{
+				width:65%;
+			}
+			.contacts-info{
+				width:300px;
+			}
+		}
+		@media only screen and (max-width: 938px){
+			.contacts{
+				width:85%;
+			}
+			.contacts-info{
+				width:350px;
+			}
+		}
+		@media only screen and (max-width: 824px){
+			.contacts{
+				width:90%;
+			}
+			.contacts-info{
+				width:350px;
+			}
+		}
+		@media only screen and (max-width: 778px){
+			.no-align1{
+				font-size: 20px;
+			}
+			.contacts-info{
+				width:540px;
+				margin: auto;
+			}
+			.media {
+				justify-content: center;
+			}
+			.info{
+				display: flex;
+				justify-content: space-between;
+			}
+			.fa-4x {
+				font-size: 2em;
+			}
+			.inputfield{
+				width:100%;
+			}
+		}
+		@media only screen and (max-width: 500px){
+			.info{
+				display: flex;
+				flex-direction: column;
+			}
+		}
+
+		@media only screen and (max-width: 1214px){
+			.advantages-info1 {
+				width:90%;
+			}
+			.img1{
+				width:300px;
+			}
+		}
+		@media only screen and (max-width: 1080px){
+			.advantages-info1 {
+				width:85%;
+			}
+			.img1{
+				width:250px;
+			}
+		}
+		@media only screen and (max-width: 974px){
+			.advantages-info1 {
+				width:90%;
+			}
+			.img1{
+				width:250px;
+			}
+		}
+		@media only screen and (max-width: 914px){
+			.advantages-info1 {
+				width:457px;
+			}
+			.img1{
+				width:457px;
+				background-size: cover;
+			}
+		}
+		@media only screen and (max-width: 550px){
+			.advantages-info1 {
+				width:350px;
+			}
+			.img1{
+				width:350px;
+				background-size: cover;
+			}
+			
+		}	
+		@media only screen and (max-width: 430px){
+			.advantages-info1 {
+				width:280px;
+			}
+			.img1{
+				width:280px;
+				background-size: cover;
+			}
+			
+		}	
+		@media only screen and (max-width: 350px){
+			.advantages-info1 {
+				width:230px;
+			}
+			.img1{
+				width:230px;
+				background-size: cover;
+			}
+			
+		}	
+		@media only screen and (max-width: 1100px){
+			.description {
+				flex-direction: column;
+			}
+			.icons{
+				display: flex;
+				flex-direction: initial;
+				width:18%;
+				margin: auto;
+				justify-content: space-between;
+			}
+		}
+		
+
+
+		</style>
+	</head>
+	<body>
+	<div class="bg-img">
+		<div class="header">
+			<img src="https://livedemo00.template-help.com/wt_prod-28076_tf/images/logo-default-300x66.png"height="33px"width="150px">
+			<div class="sp-around">
+				<div class="dropdown">
+					<span>HOME <i class="fas fa-caret-down"></i></span>
+					<div class="dropdown-content">
+						<span>HOME </span><br><br>
+						<span>HOME 2</span><br><br>
+						<span>HOME 3</span>
+					</div>
+				</div>
+				<span>TOURS</span>
+				<span>ABOUT</span>
+				<span>ADVANTAGES</span>
+				<span>BLOG</span>
+				<span>CONTACTS</span>
+			</div>
+		</div>
+		<div class="description">
+			<div class="header-description">
+				<h1 class="h1-align">The Best Trips Around Portugal Begin With Us</h1>
+				<div class="button">
+					<div class="button1">
+						<span>Date </span>
+						<i class="fas fa-caret-down"></i>
+					</div>
+					<div class="button1">
+						<span>Your Price Range </span>
+						<i class="fas fa-caret-down"></i>
+					</div>
+					<div class="button2">
+						<span><b>SEARCH TOURS </b></span>
+					</div>
+				</div>
+			</div>
+			<div class="icons">
+				<div class="icon-align">
+					<i class="fab fa-facebook-f"></i>
+				</div>
+				<div class="icon-align1">
+					<i class="fab fa-linkedin-in"></i>
+				</div>
+				<div class="icon-align2">
+					<i class="fab fa-twitter"></i>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div>
+		<h2 class="h2-align"><b>Best Sellers</b></h2>
+	</div>
+	<div class="sellers-info  wrap">
+		<div class="package">
+			<img src="https://livedemo00.template-help.com/wt_prod-28076_tf/images/grid-gallery-1-370x260.jpg">
+			<div class="days">
+				<span class="days-color">3 days/2 nights</span>
+				<span class="no-color"><b>From $1000</b></span>
+			</div>
+			<h4 class="h4-align" >Sintra, Lisbon and Fátima Three-Day Tour</h4>
+		</div>
+		<div class="package">
+			<img src="https://livedemo00.template-help.com/wt_prod-28076_tf/images/grid-gallery-2-370x260.jpg">
+			<div class="days">
+				<span class="days-color">4 days/3 nights</span>
+				<span class="no-color"><b>From $500</b></span>
+			</div>
+			<h4 class="h4-align" >Douro Valley Group Tour with Wine Tasting</h4>
+		</div>
+		<div class="package">
+			<img src="https://livedemo00.template-help.com/wt_prod-28076_tf/images/grid-gallery-3-370x260.jpg">
+			<div class="days">
+				<span class="days-color">1 day</span>
+				<span class="no-color"><b>From $800</b></span>
+			</div>
+			<h4 class="h4-align" >Sintra and Cascais Small-Group Day Trip from Lisbon</h4>
+		</div>
+	</div>
+	<div class="sellers-info wrap">
+		<div class="package">
+			<img src="https://livedemo00.template-help.com/wt_prod-28076_tf/images/grid-gallery-4-370x260.jpg">
+			<div class="days">
+				<span class="days-color">7 days/6 nights</span>
+				<span class="no-color"><b>From $900</b></span>
+			</div>
+			<h4 class="h4-align" >Highlights of Portugal</h4>
+		</div>
+		<div class="package">
+			<img src="https://livedemo00.template-help.com/wt_prod-28076_tf/images/grid-gallery-5-370x260.jpg">
+			<div class="days">
+				<span class="days-color">7 days/6 nights</span>
+				<span class="no-color"><b>From $1200</b></span>
+			</div>
+			<h4 class="h4-align" >Fátima, Nazaré, and Óbidos Small-Group Trip</h4>
+		</div>
+		<div class="package">
+			<img src="https://livedemo00.template-help.com/wt_prod-28076_tf/images/grid-gallery-6-370x260.jpg">
+			<div class="days">
+				<span class="days-color">1 day</span>
+				<span class="no-color"><b>From $1500</b></span>
+			</div>
+			<h4 class="h4-align" >Sintra Full-Day Trip - A Journey through Wonderland</h4>
+		</div>
+	</div>
+	<div class="border-align">
+		<div class="border">
+			<span><b>VIEW ALL TOURS</b></span>
+		</div>
+	</div>
+	<div class="bg-color">
+		<div class="add-info wrap">
+			<div class="values">
+				<h3 class="h3-align"><b>Our Values</b></h3>
+				<p class="value-info">Since our foundation, Skyline has been the leading tour agency in Portugal, offering top-quality services. We take great pride in our diverse portfolio of tours in Portugal. We also offer high quality tours and experiences.</p>
+				<div class="border1-align">
+					<div class="border1">
+						<span><b>READ MORE</b></span>
+					</div>
+				</div>
+			</div>
+			<div class="Destinations">
+				<h3 class="h3-align"><b>Destinations</b></h3>
+				<div class="button Destinations-align">
+					<span>Lisbon</span>
+					<span>75%</span>
+				</div>
+				<div class="progress" style="height: 2px;margin-top: 10px;">
+					<div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+				</div>
+				<div class="button">
+					<span>Sintra</span>
+					<span>33%</span>
+				</div>
+				<div class="progress" style="height: 2px;margin-top: 10px;">
+					<div class="progress-bar" role="progressbar" style="width: 33%;" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100"></div>
+				</div>
+				<div class="button">
+					<span>Oporto</span>
+					<span>88%</span>
+				</div>
+				<div class="progress" style="height: 2px;margin-top: 10px;">
+					<div class="progress-bar" role="progressbar" style="width: 88%;" aria-valuenow="88" aria-valuemin="0" aria-valuemax="100"></div>
+				</div>
+				<div class="button">
+					<span>Évora</span>
+					<span>75%</span>
+				</div>
+				<div class="progress" style="height: 2px;margin-top: 10px;">
+					<div class="progress-bar" role="progressbar" style="width: 75%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+				</div>
+				<div class="button">
+					<span>Óbidos</span>
+					<span>50%</span>
+				</div>
+				<div class="progress" style="height: 2px;margin-top: 10px;">
+					<div class="progress-bar" role="progressbar" style="width: 50%;" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+				</div>
+			</div>
+			<div class="partners">
+				<h3 class="h3-align"><b>Partners</b></h3>
+				<div class="button Destinations-align">
+					<div class="border2">
+						<img src="https://livedemo00.template-help.com/wt_prod-28076_tf/images/box-award-1-132x49.png">
+					</div>
+					<div class="border2">
+						<img src="https://livedemo00.template-help.com/wt_prod-28076_tf/images/box-award-2-120x71.png">
+					</div>
+					<div class="border2">
+						<img src="https://livedemo00.template-help.com/wt_prod-28076_tf/images/box-award-3-78x90.png">
+					</div>
+					<div class="border2">
+						<img src="https://livedemo00.template-help.com/wt_prod-28076_tf/images/box-award-4-160x23.png">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="advantages">
+		<h2 class="h2-align"><b>Our Advantages</b></h2>
+		<span>You can rely on our experience and the quality of services we provide. Here are other reasons to book tours at Skyline.</span>
+	</div>
+	<div class="advantages-info wrap">
+		<div class="prices">
+			<div class="border3">
+				<span>Lowest Prices</span>
+			</div>
+			<div class="border4">
+				<i class="fas fa-wallet fa-3x"></i>
+			</div>
+		</div>
+		<div class="prices">
+			<div class="border3">
+				<span>Variety of Tours</span>
+			</div>
+			<div class="border4">
+				<i class="fas fa-list fa-3x"></i>
+			</div>
+		</div>
+		<div class="prices">
+			<div class="border3">
+				<span>Easy Booking</span>
+			</div>
+			<div class="border4">
+				<i class="far fa-thumbs-up fa-3x"></i>
+			</div>
+		</div>
+		<div class="prices">
+			<div class="border3">
+				<span>Most Popular Agency</span>
+			</div>
+			<div class="border4">
+				<i class="far fa-gem fa-3x"></i>
+			</div>
+		</div>
+	</div>
+	<div class="bg-img1">
+		<div class="align">
+			<div class="img1-info">
+				<span class="info-align">Experience the Beauty of Portugal</span>
+				<div class="border5">
+					<span><b>BOOK A TOUR</b></span>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="Testimonials">
+		<h2 class="h2-align"><b>Testimonials</b></h2>
+	</div>
+	<div class="advantages-info1 wrap">
+		<div class="img1">
+			<div class="border6">
+				<img src="https://livedemo00.template-help.com/wt_prod-28076_tf/images/testimonials-1-68x68.jpg">
+			</div>
+			<p class="p-align">Patrick Mills</p>
+			<p class="p-align1">Regular Client</p>
+			<span class="content-align">I just wanted to share how much I enjoy dealing with Skyline. You have great people working to make traveling as unforgettable as possible. Thank you for great experience!</span>
+		</div>
+		<div class="img1">
+			<div class="border6">
+				<img src="https://livedemo00.template-help.com/wt_prod-28076_tf/images/testimonials-2-68x68.jpg">
+			</div>
+			<p class="p-align">Paul Johnston</p>
+			<p class="p-align1">Regular Client</p>
+			<span class="content-align">Many, many thanks for helping me set up an amazing Portuguese adventure! My nephew and I had a blast! All of the accommodations were perfect and we liked everything!</span>
+		</div>
+		<div class="img1">
+			<div class="border6">
+				<img src="https://livedemo00.template-help.com/wt_prod-28076_tf/images/testimonials-3-68x68.jpg">
+			</div>
+			<p class="p-align">Michael Stanley</p>
+			<p class="p-align1">Regular Client</p>
+			<span class="content-align">I had a marvelous time in our travels to Lisbon & Oporto, I had just wonderful experiences. I loved the capital of this country as I felt like it was only the time I got to see real Portugal.</span>
+		</div>
+	</div>
+	<div class="border7-align">
+		<div class="border7">
+			<span><b>VIEW ALL TESTIMONIALS</b></span>
+		</div>
+	</div>
+	<div class="bg-img2">
+		<div class="clients wrap">
+			<div class="clients-align">
+				<i class="fas fa-user-friends fa-2x icon-color"></i>
+				<span class="no-font">1.5M</span>
+				<span class="color">Happy Clients</span>
+			</div>
+			<div class="clients-align">
+				<i class="fas fa-star fa-2x icon-color"></i>
+				<span class="no-font">117</span>
+				<span class="color">Amazing Tours</span>
+			</div>
+			<div class="clients-align">
+				<i class="fas fa-star fa-2x icon-color"></i>
+				<span class="no-font">231</span>
+				<span class="color">Partners</span>
+			</div>
+			<div class="clients-align">
+				<i class="far fa-comment-alt fa-2x icon-color"></i>
+				<span class="no-font">6K</span>
+				<span class="color">Questions Answered</span>
+			</div>
+		</div>
+	</div>
+	<div class="advantages">
+		<h2 class="h2-align">Latest Blog Posts</h2>
+	</div>
+	<div class="places wrap">
+		<div class="bg-img3">
+			<div class="border8-align">
+				<div class="border8">
+					<span>News</span>
+				</div>
+			</div>
+			<div class="date-align">
+				<span class="date-color">January 5, 2020, at 12:07 pm</span>
+				<h4 class="h4-align1">7 Must-See Places in Portugal</h4>
+			</div>
+		</div>
+		<div class="bg-img4">
+			<div class="border8-align">
+				<div class="border8">
+					<span>News</span>
+				</div>
+			</div>
+			<div class="date-align">
+				<span class="date-color">January 5, 2020, at 12:07 pm</span>
+				<h4 class="h4-align1">Top 5 Places You Probably Haven’t Seen in Portugal Yet</h4>
+			</div>
+		</div>
+	</div>
+	<div class="places wrap">
+		<div class="bg-img5">
+			<div class="border8-align">
+				<div class="border8">
+					<span>News</span>
+				</div>
+			</div>
+			<div class="date-align">
+				<span class="date-color">January 5, 2020, at 12:07 pm</span>
+				<h4 class="h4-align1">The Ultimate Porto Travel Guide</h4>
+			</div>
+		</div>
+		<div class="bg-img3">
+			<div class="border8-align">
+				<div class="border8">
+					<span>News</span>
+				</div>
+			</div>
+			<div class="date-align">
+				<span class="date-color">January 5, 2020, at 12:07 pm</span>
+				<h4 class="h4-align1">The Best Time to Travel to Portugal: Opinions of Experts and Avid Travelers</h4>
+			</div>
+		</div>
+	</div>
+	<div class="border7-align">
+		<div class="border7">
+			<span><b>VIEW ALL BLOG POSTS</b></span>
+		</div>
+	</div>
+	<div class="parallax">
+		<div>
+			<span class="gallery-color">OUR GALLERY</span>
+			<h2 class="h2-align1">See Portugal Through Our Eyes As We Capture Nature, Culture & Everyday Life</h2>
+			<span class="gallery-info">Take a look at our gallery that features the best moments from our tours and excursions.
+			</span>
+			<div class="border-1">
+				<span><b>VIEW GALLERY</b></span>
+			</div>
+		</div>
+	</div>
+	<div class="brand wrap">
+		<div class="brand-img">
+			<img src="https://livedemo00.template-help.com/wt_prod-28076_tf/images/brand-1-122x79.png">
+		</div>
+		<div class="brand-img">
+			<img src="https://livedemo00.template-help.com/wt_prod-28076_tf/images/brand-2-121x94.png">
+		</div>
+		<div class="brand-img">
+			<img src="https://livedemo00.template-help.com/wt_prod-28076_tf/images/brand-3-119x79.png">
+		</div>
+		<div class="brand-img">
+			<img src="https://livedemo00.template-help.com/wt_prod-28076_tf/images/brand-4-130x76.png">
+		</div>
+		<div class="brand-img">
+			<img src="https://livedemo00.template-help.com/wt_prod-28076_tf/images/brand-5-121x80.png">
+		</div>
+		<div class="brand-img">
+			<img src="https://livedemo00.template-help.com/wt_prod-28076_tf/images/brand-6-100x77.png">
+		</div>
+	</div>
+	<div class="bg-color1">
+		<div class="contacts wrap">
+			<div class="contacts-info">
+				<h3 class="h3-align">Get in Touch</h3>
+				<form action="/action_page.php">
+					<div class="form-group">
+						<label for="name"></label>
+						<input type="name" class="form-control inputfield" id="name" placeholder=" Name" name="name">
+					</div>
+					<div class="form-group">
+						<label for="email"></label>
+						<input type="email" class="form-control inputfield" id="email" placeholder=" Email" name="email">
+					</div>
+					<div class="form-group">
+						<label for="message"></label>
+						<input type="message" class="form-control inputfield" id="message" placeholder=" Message" name="message">
+					</div>
+					<button type="submit" class="btn btn-default">Submit</button>
+				</form>
+			</div>
+			<div class="contacts-info">
+				<h3 class="h3-align">Contact Information</h3>
+				<div class="info">
+					<div class="contacts-align">
+						<i class="fas fa-phone-alt fa-4x fa-color "></i>
+						<span class="no-align1">1-800-1234-567</span>
+					</div>
+					<div class="contacts-align">
+						<i class="fas fa-envelope-square fa-4x fa-color"></i>
+						<span class="no-align1">info@demolink.org</span>
+					</div>
+				</div>
+				<div class="media">
+					<div class="fb-button">
+						<i class="fab fa-facebook-f"></i>
+					</div>
+					<div class="linkedin-button">
+						<i class="fab fa-linkedin-in"></i>
+					</div>
+					<div class="twitter-button">
+						<i class="fab fa-twitter"></i>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="flex wrap images-info">
+		<div class="images">
+			<img src="https://livedemo00.template-help.com/wt_prod-28076_tf/images/personal-page-gallery-1-320x320.jpg"height="224"width="224">
+			<div class="border-heart">
+				<i class="far fa-heart"></i>&nbsp;
+				<span>56</span>
+			</div>
+		</div>
+		<div class="images">
+			<img src="https://livedemo00.template-help.com/wt_prod-28076_tf/images/personal-page-gallery-2-320x320.jpg"height="224"width="224">
+			<div class="border-heart">
+				<i class="far fa-heart"></i>&nbsp;
+				<span>56</span>
+			</div>
+		</div>
+		<div class="images">
+			<img src="https://livedemo00.template-help.com/wt_prod-28076_tf/images/personal-page-gallery-3-320x320.jpg"height="224"width="224">
+			<div class="border-heart">
+				<i class="far fa-heart"></i>&nbsp;
+				<span>56</span>
+			</div>
+		</div>
+		<div class="images">
+			<img src="https://livedemo00.template-help.com/wt_prod-28076_tf/images/personal-page-gallery-4-320x320.jpg"height="224"width="224">
+			<div class="border-heart">
+				<i class="far fa-heart"></i>&nbsp;
+				<span>56</span>
+			</div>
+		</div>
+		<div class="images">
+			<img src="https://livedemo00.template-help.com/wt_prod-28076_tf/images/personal-page-gallery-5-320x320.jpg"height="224"width="224">
+			<div class="border-heart">
+				<i class="far fa-heart"></i>&nbsp;
+				<span>56</span>
+			</div>
+		</div>
+		<div class="images">
+			<img src="https://livedemo00.template-help.com/wt_prod-28076_tf/images/personal-page-gallery-6-320x320.jpg"height="224"width="224">
+			<div class="border-heart">
+				<i class="far fa-heart"></i>&nbsp;
+				<span>56</span>
+			</div>
+		</div>
+	</div>
+	<div class="footer-bg">
+		<div class="footer wrap">
+			<div class="footer-description">
+				<div class="description-info">
+					<span class="no-align2">356</span>
+					<p class="tour-color">Tours</p>
+				</div>
+				<div class="description-info">
+					<span class="no-align2">132</span>
+					<p class="tour-color">Regular Excursions and Itineraries</p>
+				</div>
+				<div class="description-info">
+					<span class="no-align2">2312</span>
+					<p class="tour-color">Positive Reviews by Satisfied Customers</p>
+				</div>
+				<div class="description-info">
+					<span class="no-align2">13</span>
+					<p class="tour-color">Years of Experience in Tourism</p>
+				</div>
+			</div>
+			<div class="twitter-feed">
+				<h3 class="h3-align1">Twitter Feed</h3>
+				<div class="flex1">
+					<i class="fab fa-twitter fa-2x"></i>
+					<div class="pd-lt">
+						<p class="p-color">
+						The Rule Of Thirds: An Ultimate Key To Your Stunning  #Photo  -  https://goo.gl/owH6x5 #webdesign</p>
+						<p>51 minutes ago</p>
+					</div>
+				</div>
+				<div class="flex1">
+					<i class="fab fa-twitter fa-2x"></i>
+					<div class="pd-lt">
+						<p class="p-color">
+						50 Professional  #CV  Templates For Word That Look Like #Photoshop  Designs -  https://goo.gl/zynQiY #webdesign</p>
+						<p>51 minutes ago</p>
+					</div>
+				</div>
+				<div class="flex1">
+					<i class="fab fa-twitter fa-2x"></i>
+					<div class="pd-lt">
+						<p class="p-color">
+						The Art of Paper: 10 Best Notebooks for  #Designers - https://goo.gl/7dDT #inspiration</p>
+						<p>51 minutes ago</p>
+					</div>
+				</div>
+			</div>
+			<div class="twitter-feed">
+				<h3 class="h3-align1">About Us</h3>
+				<div class="about">
+					<p class="tour-color">Founded in 2005, Skyline offers travelers a great selection of tours and excursions in Portugal. Explore the best and yet untraveled places of this breathtaking European destination.</p>
+				</div>
+				<div class="about">
+					<h3 class="h3-align1">Newsletter</h3>
+				</div>
+				<div class="about">
+					<p class="tour-color">Keep up with the weekly news and updates from Skyline. Enter your e-mail and subscribe to our newsletter.</p>
+				</div>
+				<form>
+					<div class="input-group">
+						<input id="email" type="text" class="form-control input-lg" name="email" placeholder="Email">
+						<span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="copy">
+			<span>© 2021 All Rights Reserved</span>
+		</div>
+	</div>
+</div>
+</body>
+</html>
